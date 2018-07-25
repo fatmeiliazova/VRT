@@ -95,8 +95,6 @@ is executed - the other scripts, e.g. npm run ci-test - see the original
 PORTAL_URL passed
 
 
-## TODO
 
-We will need to replicate the loadCookies using the url as a default domain behaviour for other engines, if we need to use them.
 
 You are done! Happy testing...
