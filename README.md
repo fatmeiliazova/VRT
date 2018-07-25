@@ -95,6 +95,7 @@ is executed - the other scripts, e.g. npm run ci-test - see the original
 PORTAL_URL passed
 
 
-
+## IMPORTANT
+Current code will not work. You nedd to update main portal link in package.json and paths in paths.js file.
 
 You are done! Happy testing...
