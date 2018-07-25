@@ -1,0 +1,19 @@
+{
+  "name": "visual-regression-test",
+  "version": "1.0.0",
+  "description": "README.md",
+  "scripts": {
+    "test": "PORTAL_URL=https://${FLAVOUR}_remain_url backstop test --configPath=backstop.js",
+    "approve": "backstop approve --configPath=backstop.js",
+    "clean": "rm -rf backstop_data/bitmaps_reference backstop_data/bitmaps_test backstop_data/html_report backstop_data/ci_report",
+    "ci-test": "backstop test --configPath=backstop.js",
+    "ci-reference": "PORTAL_URL=https://${FLAVOUR}_remain_url backstop reference --configPath=backstop.js",
+    "ci-summary": "node ./scripts/summarize-css-regression-tests.js",
+    "ci-run": "npm run clean && npm run ci-reference && npm run ci-test && npm run ci-summary"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "backstopjs": "^3.2.19"
+  }
+}

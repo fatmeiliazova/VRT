@@ -1,0 +1,10 @@
+# include everything expect following 3 folders in backstop_data
+/backstop_data/bitmaps_reference
+/backstop_data/bitmaps_test
+/backstop_data/html_report
+# node project dependencies
+# We should allow the lock file into the registry asap
+package-lock.json
+# --
+node_modules
+/backstop_data/ci_report
